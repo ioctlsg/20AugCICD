@@ -7,27 +7,27 @@ Creating a self-signed SSL certificate involves generating your own certificate 
 1. **Open a Terminal or Command Prompt:**
    Open a terminal or command prompt on your server or computer and change director to you SSL folder
 
-   
+   ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Capture.PNG)
 
 3. **Generate a Private Key:**
    Use the following command to generate a private key. This key will be used to sign your certificate:
    
-   ```
+   ```bash
    openssl genpkey -algorithm RSA -out private-key.pem
    ```
 
 4. **Generate a Certificate Signing Request (CSR):**
    Create a CSR with the following command. You'll be prompted to enter information about your organization and domain. The Common Name (CN) should be the domain name you want to secure:
 
-   ```
+   ```bash
    openssl req -new -key private-key.pem -out csr.pem
    ```
 
 5. **Generate a Self-Signed Certificate:**
    Use the following command to generate a self-signed certificate using the private key and CSR:
 
-   ```
-   openssl x509 -req -days 365 -in csr.pem -signkey private-key.pem -out self-signed-cert.pem
+   ```bash
+  openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout prtg02.key -out prtg02.crt -config prtgcret.txt -extensions v3_req
    ```
 
    Adjust the `-days` parameter to set the validity period of the certificate (in days).
