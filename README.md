@@ -5,23 +5,25 @@ Creating a self-signed SSL certificate involves generating your own certificate 
 **Note:** The steps provided below are for educational purposes and should not be used for securing production websites.
 
 1. **Open a Terminal or Command Prompt:**
-   Open a terminal or command prompt on your server or computer.
+   Open a terminal or command prompt on your server or computer and change director to you SSL folder
 
-2. **Generate a Private Key:**
+   
+
+3. **Generate a Private Key:**
    Use the following command to generate a private key. This key will be used to sign your certificate:
    
    ```
    openssl genpkey -algorithm RSA -out private-key.pem
    ```
 
-3. **Generate a Certificate Signing Request (CSR):**
+4. **Generate a Certificate Signing Request (CSR):**
    Create a CSR with the following command. You'll be prompted to enter information about your organization and domain. The Common Name (CN) should be the domain name you want to secure:
 
    ```
    openssl req -new -key private-key.pem -out csr.pem
    ```
 
-4. **Generate a Self-Signed Certificate:**
+5. **Generate a Self-Signed Certificate:**
    Use the following command to generate a self-signed certificate using the private key and CSR:
 
    ```
@@ -30,10 +32,10 @@ Creating a self-signed SSL certificate involves generating your own certificate 
 
    Adjust the `-days` parameter to set the validity period of the certificate (in days).
 
-5. **Install the Certificate:**
+6. **Install the Certificate:**
    Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration.
 
-6. **Testing:**
+7. **Testing:**
    Access your website using the HTTPS protocol (e.g., `https://localhost`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
 
 Remember that self-signed certificates are not recognized by browsers as trusted, and users will see warning messages. For local testing and development, you might need to ignore these warnings. However, for production environments, it's strongly recommended to use SSL certificates issued by trusted CAs to ensure security and user trust.
