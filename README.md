@@ -36,31 +36,15 @@ IP.1 = 192.168.10.10
 
 ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/HoSehBo.png)
 
-3. **Generate a Private Key:**
-   Use the following command to generate a private key. This key will be used to sign your certificate:
+3. **Generate a Key Pair:**
+   Use the following command to generate a key pair. This key(prtg01.key) will be used to sign your certificate(prtg01.crt):
    
    ```bash
-   openssl genpkey -algorithm RSA -out private-key.pem
+   openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout prtg01.key -out prtg01.crt -config prtgcret.txt -extensions v3_req
    ```
 
-4. **Generate a Certificate Signing Request (CSR):**
-   Create a CSR with the following command. You'll be prompted to enter information about your organization and domain. The Common Name (CN) should be the domain name you want to secure:
-
-   ```bash
-   openssl req -new -key private-key.pem -out csr.pem
-   ```
-
-5. **Generate a Self-Signed Certificate:**
-   Use the following command to generate a self-signed certificate using the private key and CSR:
-
-   ```bash
-  openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout prtg02.key -out prtg02.crt -config prtgcret.txt -extensions v3_req
-   ```
-
-   Adjust the `-days` parameter to set the validity period of the certificate (in days).
-
-6. **Install the Certificate:**
-   Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration.
+4. **Install the Certificate:**
+   Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration. Some have tools for installation e.g. 
 
 7. **Testing:**
    Access your website using the HTTPS protocol (e.g., `https://localhost`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
