@@ -43,15 +43,16 @@ IP.1 = 192.168.10.10
    openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout prtg01.key -out prtg01.crt -config prtgcret.txt -extensions v3_req
    ```
 
-4. **Install the Certificate:**
+4. **Install the Key to your service:**
    Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration. Some have tools for installation e.g. prtg
 
+5. **Install the Certificate to your computer on windows:**
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%201.png)
-  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%202.png)
-   ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%203.png)
-    ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%204.png)
+ ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%202.png)
+ ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%203.png)
+ ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%204.png)
 
-5. **Testing:**
+6. **Testing:**
    Access your website using the HTTPS protocol (e.g., `https://yourwebserverip`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
 
   ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/03_prtg-certificate-importer.webp)
