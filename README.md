@@ -5,7 +5,7 @@ Creating a self-signed SSL certificate involves generating your own certificate 
 **Note:** The steps provided below are for educational purposes and should not be used for securing production websites.
 
 1. **Open a Terminal or Command Prompt:**
-   Open a terminal or command prompt on your server or computer and change director to you SSL folder
+   Open a terminal or command prompt on your server or computer and change director to your SSL folder where you unzip the files(https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/openssl-1.0.2j-fips-x86_64.zip)
 
    ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Capture.PNG)
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Command_Prompt.png)
