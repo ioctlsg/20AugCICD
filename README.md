@@ -9,6 +9,31 @@ Creating a self-signed SSL certificate involves generating your own certificate 
 
    ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Capture.PNG)
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Command_Prompt.png)
+
+2. **Generate a Configuration file for SSL:**
+   This Configuation file would hold the paramenter of your ssl infomation.
+   
+```bash
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = SG
+ST = Singapore
+L = Singapore
+O = HoSehBoh Pte Ltd
+OU = IT
+CN = prtg01.HoSehBoh.sg
+[v3_req]
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = this.that.sg
+IP.1 = 192.168.10.10
+```
+
 3. **Generate a Private Key:**
    Use the following command to generate a private key. This key will be used to sign your certificate:
    
