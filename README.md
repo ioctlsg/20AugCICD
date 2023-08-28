@@ -1,4 +1,4 @@
-# Self-signed certificates for SSL 
+# Self-signed certificates for SSL(https)
 
 Creating a self-signed SSL certificate involves generating your own certificate without involving a trusted Certificate Authority (CA). While self-signed certificates are not recommended for production environments due to the lack of trust, they can be useful for testing and local development purposes. Here's a basic guide on how to create a self-signed SSL certificate:
 
