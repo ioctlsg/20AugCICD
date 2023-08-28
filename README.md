@@ -34,6 +34,8 @@ DNS.1 = this.that.sg
 IP.1 = 192.168.10.10
 ```
 
+![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Command_Prompt.png)
+
 3. **Generate a Private Key:**
    Use the following command to generate a private key. This key will be used to sign your certificate:
    
