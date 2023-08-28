@@ -11,7 +11,7 @@ Creating a self-signed SSL certificate involves generating your own certificate 
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/Command_Prompt.png)
 
 2. **Generate a Configuration file for SSL:**
-   This Configuation text file (e.g prtgcert.txt) would hold the paramenter of your ssl infomation.
+   This Configuation text file (e.g prtgcert.txt) would hold the paramenter of your ssl infomation. This file is senstive 
    
 ```bash
 [req]
