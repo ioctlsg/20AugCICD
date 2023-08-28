@@ -49,11 +49,11 @@ IP.1 = 192.168.10.10
    ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/03_prtg-certificate-importer.webp)
 
 7. **Testing:**
-   Access your website using the HTTPS protocol (e.g., `https://localhost`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
+   Access your website using the HTTPS protocol (e.g., `https://yourwebserverip`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
 
 
 
-# Why Self-signed is a bad idea.
+## Why self-signed is a bad idea ?
 
 Self-signed certificates for SSL (Secure Sockets Layer) have a number of disadvantages compared to certificates signed by trusted Certificate Authorities (CAs). Here are some of the key disadvantages:
 
