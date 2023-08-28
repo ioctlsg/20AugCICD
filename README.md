@@ -47,6 +47,8 @@ IP.1 = 192.168.10.10
    Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration. Some have tools for installation e.g. prtg
 
 5. **Install the Certificate to your computer on windows:**
+
+Flow the windows left to right. 
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%201.png)
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%202.png)
  ![alt text](https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/import%203.png)
