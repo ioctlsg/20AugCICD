@@ -44,7 +44,9 @@ IP.1 = 192.168.10.10
    ```
 
 4. **Install the Certificate:**
-   Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration. Some have tools for installation e.g. 
+   Depending on your web server or application, you will need to install the generated private key and self-signed certificate. This typically involves specifying the paths to these files in your server's configuration. Some have tools for installation e.g. prtg
+
+   ![alt text]https://github.com/ioctlsg/Self-Signed-Cert-OpenSSL/blob/main/03_prtg-certificate-importer.webp)
 
 7. **Testing:**
    Access your website using the HTTPS protocol (e.g., `https://localhost`) to verify that the self-signed certificate is working. You might encounter browser warnings since the certificate isn't trusted by default.
