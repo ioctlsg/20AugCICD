@@ -82,3 +82,5 @@ Self-signed certificates for SSL (Secure Sockets Layer) have a number of disadva
 9. **Browser and OS Changes:** Over time, browsers and operating systems may tighten their security policies and handling of self-signed certificates, potentially leading to more severe warnings or even complete blockage of access to websites using self-signed certificates.
 
 In summary, while self-signed certificates can be useful for certain specific purposes like internal testing, they are generally not recommended for production websites or applications due to the lack of trust, potential security risks, and poor user experience they can create. It's recommended to obtain SSL certificates from trusted Certificate Authorities to ensure the security and trustworthiness of your online services.
+
+Python script - work in progress. 
