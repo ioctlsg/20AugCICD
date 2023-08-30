@@ -9,7 +9,7 @@ import datetime
 import ipaddress
 
 # Gather user input
-common_name = input("Enter Common Name (e.g., prtg01.HoSehBoh.sg): ")
+common_name = input("Enter Common Name (e.g., www.coolestcert.sg): ")
 organization = input("Enter Organization Name: ")
 organizational_unit = input("Enter Organizational Unit: ")
 country = input("Enter Country (2-letter code, e.g., SG): ")
