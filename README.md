@@ -83,4 +83,22 @@ Self-signed certificates for SSL (Secure Sockets Layer) have a number of disadva
 
 In summary, while self-signed certificates can be useful for certain specific purposes like internal testing, they are generally not recommended for production websites or applications due to the lack of trust, potential security risks, and poor user experience they can create. It's recommended to obtain SSL certificates from trusted Certificate Authorities to ensure the security and trustworthiness of your online services.
 
-Python script - work in progress. 
+###If you have read all the above and come this far.
+
+The Python script - automate the process. To run the SSL certificate generation script successfully, you'll need the following prerequisites:
+
+1) Python: Make sure you have Python installed on your system. You can check if Python is installed by running python3 --version in your terminal. If it's not installed, you can download and install it from the official Python website.
+
+2) Required Python Packages: Install the required Python packages using pip. Run the following commands in your terminal:
+
+```sh
+pip install cryptography ipaddress
+```
+
+This will install the cryptography library for SSL certificate generation and the ipaddress library for handling IP addresses.
+
+Terminal or Command Prompt: You need a terminal or command prompt to execute the Python script. You can use the built-in terminal on most operating systems.
+
+```sh
+python3 ssl_generator.py
+```
