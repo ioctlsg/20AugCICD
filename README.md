@@ -83,7 +83,7 @@ Self-signed certificates for SSL (Secure Sockets Layer) have a number of disadva
 
 In summary, while self-signed certificates can be useful for certain specific purposes like internal testing, they are generally not recommended for production websites or applications due to the lack of trust, potential security risks, and poor user experience they can create. It's recommended to obtain SSL certificates from trusted Certificate Authorities to ensure the security and trustworthiness of your online services.
 
-###If you have read all the above and come this far.
+### If you have read all the above and come this far. - Work in Progress
 
 The Python script - automate the process. To run the SSL certificate generation script successfully, you'll need the following prerequisites:
 
