@@ -1,4 +1,10 @@
+
+![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge) ![Windows Badge](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=fff&style=flat-square) ![macOS Badge](https://img.shields.io/badge/macOS-000?logo=macos&logoColor=fff&style=flat)
+
+
 # Self-signed certificates for SSL(https)
+
+
 
 Creating a self-signed SSL certificate involves generating your own certificate without involving a trusted Certificate Authority (CA). While self-signed certificates are not recommended for production environments due to the lack of trust, they can be useful for testing and local development purposes. Here's a basic guide on how to create a self-signed SSL certificate:
 
